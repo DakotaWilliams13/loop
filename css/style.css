@@ -25,6 +25,10 @@ main {
     margin: 0 auto;
 }
 
+header {
+    min-height: 800px;
+    background-color: #F9F6F1;
+}
 /*------------------------section delivery----------------------------*/
 .delivery {
     background-color: #212121;
@@ -52,6 +56,11 @@ main {
 }
 
 /*------------------------section man-woman----------------------------*/
+/*https://webcode.tools/   - настроить свойства*/
+.man-woman {
+    background: linear-gradient(90deg, #F9F6F1 50%, #F9F6F1 50%, #F9E0E0 50%, #F9E0E0 100%);
+}
+
 .man-woman .container {
     display: flex;
     flex-direction: row;
@@ -60,4 +69,72 @@ main {
 .man,
 .woman {
     width: 50%;
+    padding-top: 60px;
+    padding-bottom: 58px;
+}
+
+.man {
+    background: url(../img/man.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.woman {
+    background: url(../img/woman.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding-left: 35px;
+}
+
+.man-woman h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.man-woman h2 span {
+    font-weight: normal;
+}
+
+.man-woman p {
+    font-weight: 300;
+}
+
+.man-woman a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D7B399;
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+}
+
+.man-woman a:hover {
+    background: #947762;
+}
+
+/*------------------------section header-menu----------------------------*/
+.header-menu {
+    min-height: 90px;
+}
+
+.section_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.mainmenu_list {
+    display: flex
+}
+
+ul {
+    list-style: none;
+}
+
+.menu li,
+.basket li {
+    display: flex;
+    justify-content: space-between;
 }
